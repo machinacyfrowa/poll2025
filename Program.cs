@@ -24,4 +24,9 @@ using (StreamReader streamReader = new StreamReader(path))
     //w tym miejscu masz w liście votes zliczone głosy
     //możesz je teraz przetwarzać dalej, np. wyświetlić
     Console.WriteLine("Podsumowanie głosów:");
+    foreach (var item in results)
+    {
+        Console.WriteLine("Kandydat: " + item.Key + ", uzyskał "
+                            + item.Value + " głosów");
+    }
 }
